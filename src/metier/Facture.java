@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public class Facture
 {
-	private String Client;
+	private Client Client;
 	private int montant;
 	private LocalDate datefacture = LocalDate.now();
 	private boolean reglementfacture = false;
