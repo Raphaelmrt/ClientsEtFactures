@@ -26,6 +26,7 @@ public class Client
 		return nom;
 	}
 	
+	
 	/**
 	 * Modifie le nom du client.
 	 * @param nom le nom du client.
