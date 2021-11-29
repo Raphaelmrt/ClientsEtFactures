@@ -69,7 +69,6 @@ public class Client
 	
 	public int sommeMontants()
 	{
-		//for (i=0; i<)
 		return 0;
 	}
 
