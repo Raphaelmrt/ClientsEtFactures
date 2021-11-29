@@ -8,6 +8,7 @@ public class Facture
 	private int montant;
 	private LocalDate datefacture = LocalDate.now();
 	private boolean reglementfacture = false;
+	private boolean estReglee;
 	
 	/**
 	 * Retourne le client à qui est adressée la facture..
@@ -41,7 +42,7 @@ public class Facture
 	
 	public boolean estReglee()
 	{
-		return true;
+		return estReglee;
 	}
 
 	/**
