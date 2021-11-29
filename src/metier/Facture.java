@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public class Facture
 {
-	private Client Client;
+	private Client client;
 	private int montant;
 	private LocalDate datefacture = LocalDate.now();
 	private boolean reglementfacture = false;
@@ -13,15 +13,15 @@ public class Facture
 	 * Retourne le client à qui est adressée la facture..
 	 * @return le client.
 	 */
-	public Facture (int montant)
+	public Facture (int montant, Client client)
 	{
 		this.montant = montant;
-		
+		this.client = client;
 	}
 	
 	public Client getClient()
 	{
-		return Client;
+		return client;
 	}
 
 	/**
@@ -51,7 +51,7 @@ public class Facture
 	
 	public LocalDate getDate()
 	{
-		return null;
+		return datefacture;
 	}
 
 	/**
