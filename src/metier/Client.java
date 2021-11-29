@@ -100,6 +100,8 @@ public class Client
 	 */
 	public static List<Client> tous()
 	{
+		//Client clients = new Client(this.nom);
+		//return clients;
 		return null;
 	}
 	
