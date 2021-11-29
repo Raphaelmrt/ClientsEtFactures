@@ -7,6 +7,7 @@ public class Client
 {
 	private String nom;
 	private ArrayList<Facture> factures = new ArrayList<>();
+	private ArrayList<Client> clients = new ArrayList<>();
 	/** 
 	 * Crée un client.
 	 * @param nom le nom du client. 
@@ -108,6 +109,6 @@ public class Client
 	
 	public void delete()
 	{
-		//Client.delete();
+		clients.remove(10);
 	}
 }
