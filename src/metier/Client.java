@@ -7,7 +7,7 @@ public class Client
 {
 	private String nom;
 	private ArrayList<Facture> factures = new ArrayList<>();
-	//private ArrayList<Client> clients = new ArrayList<>();
+	private static ArrayList<Client> clients = new ArrayList<>();
 	/** 
 	 * Crée un client.
 	 * @param nom le nom du client. 
@@ -16,6 +16,7 @@ public class Client
 	public Client(String nom)
 	{
 		 this.nom = nom;
+		 clients.add(this);
 	}
 
 	/**
@@ -68,6 +69,7 @@ public class Client
 	
 	public int sommeMontants()
 	{
+		//for (i=0; i<)
 		return 0;
 	}
 
@@ -100,9 +102,7 @@ public class Client
 	 */
 	public static List<Client> tous()
 	{
-		//Client clients = new Client(this.nom);
-		//return clients;
-		return null;
+		return clients;
 	}
 	
 	/**
@@ -111,6 +111,6 @@ public class Client
 	
 	public void delete()
 	{
-		//clients.remove(0);
+		clients.remove(this);
 	}
 }
