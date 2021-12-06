@@ -7,7 +7,6 @@ public class Facture
 	private Client client;
 	private int montant;
 	private LocalDate datefacture = LocalDate.now();
-	//private boolean reglementfacture = false;
 	private boolean estReglee;
 	
 	/**
